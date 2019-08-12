@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css?family=Assistant&display=swap');
+@font-face {
+    font-family: "SakuraALP";
+    src: url(SakuraALP.ttf);
+}
+body {
+	font-family: 'Assistant', sans-serif;
+	margin: 0;
+	padding: 0;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	background-image: url("../img/background_main.png");
+}
+.separator {
+	background-color: #2a2a2e;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+.blue {
+	font-family: "SakuraALP";
+    text-shadow: #0040FF 0px 0px 5px, #0040FF 0px 0px 5px, #0040FF 0px 0px 5px, #0040FF 0px 0px 5px, #0040FF 0px 0px 5px, #0040FF 0px 0px 5px, #0040FF 0px 0px 5px, #0040FF 0px 0px 5px, #0040FF 0px 0px 5px;
+    -webkit-font-smoothing: antialiased;
+    text-align: center;
+    color: #fff;
+}
+.green {
+	font-family: "SakuraALP";
+    text-shadow: #58FA58 0px 0px 5px, #58FA58 0px 0px 5px, #58FA58 0px 0px 5px, #58FA58 0px 0px 5px, #58FA58 0px 0px 5px, #58FA58 0px 0px 5px, #58FA58 0px 0px 5px, #58FA58 0px 0px 5px, #58FA58 0px 0px 5px;
+    -webkit-font-smoothing: antialiased;
+    text-align: center;
+    color: #fff;
+}
+.separator p {
+	color: #fff;
+	text-align: center;
+}
+.main {
+	max-width: 1200px;
+	margin: 0 auto;
+	background-color: #2a2a2e;
+}
+.header {
+	background-image: url("../img/background_header.png");
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+.header h1 {
+    font-family: "SakuraALP";
+    font-weight: bold;
+    font-size: 130px;
+    text-shadow: tomato 0px 0px 15px, tomato 0px 0px 15px, tomato 0px 0px 15px, tomato 0px 0px 15px, tomato 0px 0px 15px, tomato 0px 0px 15px, tomato 0px 0px 15px, tomato 0px 0px 15px, tomato 0px 0px 15px;
+    -webkit-font-smoothing: antialiased;
+    text-align: center;
+    color: #fff;
+}
+.flex-container {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: row wrap;
+	justify-content: space-around;
+}
+.flex-container a {
+	margin-bottom: 100px;
+}
+.flex-item {
+	background-image: url("../img/background_img.png");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	background-color: whitesmoke;
+  	padding: 5px;
+ 	width: 200px;
+ 	height: 150px;
+	border: 5px solid #242424;
+	border-radius: 5px;
+  	line-height: 150px;
+  	color: white;
+  	font-weight: bold;
+  	font-size: 3em;
+  	text-align: center;
+}
+.flex-item img {
+ 	height: 150px;
+}
+.bottom {
+	text-align: center;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	color: tomato;
+	font-size: 20px;
+}
+.bottom a {
+	color: #fff;
+	text-decoration: none;
+}
+
+ /* Popup container */
+.popup {
+  position: relative;
+  cursor: pointer;
+  display: inline; 
+}
+
+/* The actual popup (appears on top) */
+.popup .popuptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+} 
